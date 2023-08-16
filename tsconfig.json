@@ -1,0 +1,40 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "lib": [
+      "DOM",
+      "es2018",
+      "es2020",
+      "dom.iterable",
+      "es2020.promise"
+    ],
+    "module": "commonjs",
+    "target": "es2020",
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "types/*": [ "./types/*" ],
+    },
+    "typeRoots": [
+      "./node_modules/@types/*",
+      "./types/*"
+    ],
+    // This silences the importsNotUsedAsValues: error depreciation notice above
+    "ignoreDeprecations": "5.0"
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

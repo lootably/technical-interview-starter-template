@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+
+# Dotenv environment variables file
+.env
+
+build/
